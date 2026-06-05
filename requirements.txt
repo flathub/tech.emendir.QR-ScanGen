@@ -1,0 +1,11 @@
+meson-python
+pybind11
+
+pywifi
+sdbus
+sdbus_networkmanager
+Pillow
+qrcode
+opencv-python
+pyperclip
+pyzbar
