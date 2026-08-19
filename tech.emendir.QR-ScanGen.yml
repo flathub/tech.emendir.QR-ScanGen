@@ -47,5 +47,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/emendir/QR-ScanGen
-        tag: v2.0.2
-        commit: fb2f9e731f4a9129c8ee0c6aa4fd8a8c83961c4c
+        tag: v2.0.3
+        commit: 517abe4c3d917c3cd518c254aa1036a1ba6ecd6b
