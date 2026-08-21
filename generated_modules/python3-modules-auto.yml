@@ -2,10 +2,10 @@
 name: python3-package-installation
 buildsystem: simple
 build-commands:
-- pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+- pip3 install --ignore-installed --verbose --exists-action=i --no-index --find-links="file://${PWD}"
   --prefix=${FLATPAK_DEST} --no-build-isolation distro numpy opencv-python packaging
-  pillow pyperclip pyproject-metadata pywifi pyzbar qrcode scikit-build sdbus sdbus-networkmanager
-  setuptools wheel
+  pillow pyperclip pywifi pyzbar qrcode scikit-build sdbus sdbus-networkmanager setuptools
+  wheel
 sources:
 - type: file
   url: https://files.pythonhosted.org/packages/12/b3/231ffd4ab1fc9d679809f356cebee130ac7daa00d6d6f3206dd4fd137e9e/distro-1.9.0-py3-none-any.whl
@@ -47,9 +47,6 @@ sources:
   url: https://files.pythonhosted.org/packages/df/80/fc9d01d5ed37ba4c42ca2b55b4339ae6e200b456be3a1aaddf4a9fa99b8c/pyperclip-1.11.0-py3-none-any.whl
   sha256: 299403e9ff44581cb9ba2ffeed69c7aa96a008622ad0c46cb575ca75b5b84273
 - type: file
-  url: https://files.pythonhosted.org/packages/b9/8e/d883718e872abc214ba053f60f7e6edc2abd5ffbd1544beb01a9c92ddd3c/pyproject_metadata-0.12.1-py3-none-any.whl
-  sha256: f7162d580a96386a8eb096da06215f981f547d1490f03055ef99e323bc2da427
-- type: file
   url: https://files.pythonhosted.org/packages/89/55/170a52685eeefeab36bfaf26bdca629263a0a28efffc3b556b2cc86ab966/pywifi-1.1.12-py3-none-any.whl
   sha256: d1b79d9ff054eef1aca4ab97f2641650d001d6740bfa7666a7d9506bcfb8459b
 - type: file
@@ -62,13 +59,13 @@ sources:
   url: https://files.pythonhosted.org/packages/47/ef/53c5d9293d1d11ed4e682fdd7f32c776b79ee30f83757395db0d4d0f0276/scikit_build-0.19.1-py3-none-any.whl
   sha256: a4fa78a7222ca40d5e8bae6700514bbf7efea4346efd9fc1f8cfca837cd1de71
 - type: file
-  url: https://files.pythonhosted.org/packages/6b/e0/43d2c3e0cc6f6c345df5f3230e2a9c62bd8ae8608d401f582ccf943da14d/sdbus-0.14.2-cp39-abi3-manylinux_2_28_aarch64.whl
-  sha256: fbed8db91668ad537089c42a71d30e2472faa2e6616a461441ab0d51344a461c
+  url: https://files.pythonhosted.org/packages/c3/2f/cbe92d8b1f648a0a5a065a4f4732d3a0525db2e0a9e59c11b45029815d65/sdbus-0.14.3-cp39-abi3-manylinux_2_28_aarch64.whl
+  sha256: 4bb2f88f63ba16be9660450f054657391474f37cc3c4085daf421d68601f4bd9
   only-arches:
   - aarch64
 - type: file
-  url: https://files.pythonhosted.org/packages/0f/f8/416467419d3345763372aaa51ef389fc95d0bd210679561edb63daa49933/sdbus-0.14.2-cp39-abi3-manylinux_2_28_x86_64.whl
-  sha256: 8a64bbb6280104efeb24a9632a9ebd5504e9c9c1349594142bbe50e734f16c83
+  url: https://files.pythonhosted.org/packages/d5/7a/e0d331eb0894e015930e570e2a381b5afbfd06bff3df586eec89d97f70e1/sdbus-0.14.3-cp39-abi3-manylinux_2_28_x86_64.whl
+  sha256: 37615035d21d29b0fab0dd8c5f86b10f17e84d6126343302f7bf71ef8b0b9c5c
   only-arches:
   - x86_64
 - type: file

@@ -42,10 +42,9 @@ modules:
     build-commands:
       - pip3 install --no-build-isolation --prefix=/app --no-deps .
       - install -D packaging/build_runners/share/${FLATPAK_ID}.desktop -t /app/share/applications/
-      - install -D packaging/build_runners/flatpak/manifest/${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo/
+      - install -D packaging/build_runners/flatpak/metainfo/${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo/
       - install -D src/qr_scangen/Icon.svg -t /app/share/icons/hicolor/scalable/apps/
     sources:
       - type: git
         url: https://github.com/emendir/QR-ScanGen
-        tag: v2.0.3
-        commit: 517abe4c3d917c3cd518c254aa1036a1ba6ecd6b
+        tag: v2.2.0
